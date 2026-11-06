@@ -1,0 +1,4 @@
+jdk:
+  - openjdk17
+install:
+  - ./gradlew :melt:publishReleasePublicationToMavenLocal -Pgroup=$GROUP -Pversion=$VERSION

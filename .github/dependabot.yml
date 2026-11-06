@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: gradle
+    directory: /
+    schedule:
+      interval: monthly
+    ignore:
+      # The library deliberately targets an older Compose so apps on older versions can use it.
+      # Raise these by hand when the minimum supported Compose version should change.
+      - dependency-name: "androidx.compose.ui:*"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+      - dependency-name: "androidx.compose.animation:*"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+    groups:
+      gradle-dependencies:
+        patterns: ["*"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

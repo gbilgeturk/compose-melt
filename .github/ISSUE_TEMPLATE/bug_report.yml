@@ -1,0 +1,43 @@
+name: Bug report
+description: Something doesn't melt the way it should
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you see instead?
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: Minimal code
+      description: The smallest composable that reproduces the problem.
+      render: kotlin
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshot or recording
+      description: Drag and drop an image or video here.
+  - type: input
+    id: version
+    attributes:
+      label: compose-melt version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: compose
+    attributes:
+      label: Compose UI version
+      placeholder: 1.7.6
+  - type: input
+    id: device
+    attributes:
+      label: Device and Android version
+      placeholder: Pixel 8, Android 15 (API 35)
+    validations:
+      required: true
