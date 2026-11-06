@@ -1,13 +1,13 @@
 [versions]
-agp = "8.7.3"
-kotlin = "2.1.0"
+agp = "9.5.1"
+kotlin = "2.4.21"
 # The library depends on explicit Compose versions so the published POM is self-contained.
 compose = "1.7.6"
 # The sample app uses the BOM.
-composeBom = "2024.12.01"
+composeBom = "2026.09.00"
 activityCompose = "1.9.3"
 junit = "4.13.2"
-binaryCompatibilityValidator = "0.16.3"
+binaryCompatibilityValidator = "0.18.2"
 
 [libraries]
 compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
